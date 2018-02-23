@@ -1,2 +1,7 @@
-# short-gun
-Open your world ^^
+# Literature Website
+
+# Overview
+Open your world
+
+# Owner
+Downey Kim
