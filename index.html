@@ -29,9 +29,8 @@
 		<section></section>
 		<article></article>
 		<div id="contents">
-			
-			<canvas>简单实例如下:
-			<canvas id="myCanvas"width="200"height="100"></canvas>
+			Canvas: <br/>
+			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
 			
 		</div>
 
@@ -39,9 +38,11 @@
 		
 		<script>
 			var c=document.getElementById("myCanvas");
-			var ctx=c.getContext("2d");
-			ctx.fillStyle="#FFFFFF";
-			ctx.fillRect(0,0,150,75);
+			var cxt=c.getContext("2d");
+			cxt.moveTo(10,10);
+			cxt.lineTo(150,50);
+			cxt.lineTo(10,50);
+			cxt.stroke();
 		</script> 
 	</body>
 
