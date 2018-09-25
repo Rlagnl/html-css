@@ -29,8 +29,11 @@
 		<section></section>
 		<article></article>
 		<div id="contents">
-			Canvas: <br/>
+			Canvas Example 1: <br/>
 			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
+			<br/><br/>
+			Canvas Example 2: <br/>
+			<canvas id="myCanvas1" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
 			
 		</div>
 
@@ -44,6 +47,18 @@
 			cxt.lineTo(10,50);
 			cxt.stroke();
 		</script> 
+		
+		<script type="text/javascript">
+
+			var c=document.getElementById("myCanvas1");
+			var cxt=c.getContext("2d");
+			cxt.fillStyle="#FF0000";
+			cxt.beginPath();
+			cxt.arc(70,18,15,0,Math.PI*2,true);
+			cxt.closePath();
+			cxt.fill();
+
+		</script>
 	</body>
 
 </html>
