@@ -13,10 +13,29 @@
 
 			div{
 				width: 400px;
-				height: 400px;
+				height: 500px;
 				border: 1px solid red;
 				padding: 20px;
 				margin: 30px;
+			}
+			
+			.animate {
+				width:100px;
+				height:100px;
+				background:red;
+				position:relative;
+				animation:mymove 5s infinite;
+				-webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+			}
+
+			@keyframes mymove {
+				from {left:0px;}
+				to {left:200px;}
+			}
+
+			@-webkit-keyframes mymove /*Safari and Chrome*/ {
+				from {left:0px;}
+				to {left:200px;}
 			}
 
 		</style>
@@ -34,7 +53,8 @@
 			<br/><br/>
 			Canvas Example 2: <br/>
 			<canvas id="myCanvas1" width="200" height="100" style="border:1px solid #c3c3c3;"></canvas>
-			
+			Animate: <br/>
+			<div class="animate"></div>
 		</div>
 
 		<footer></footer>
